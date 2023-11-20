@@ -6,6 +6,7 @@ function Login() {
       <form>
         <div>
           <label>Name</label>
+          <input></input>
         </div>
       </form>
     </div>
