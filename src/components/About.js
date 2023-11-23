@@ -57,13 +57,13 @@ function About() {
 <Navbar style={{width:"100%"}} className='main' bg="dark" data-bs-theme="dark">
     <Container>
      
-<Navbar.Brand className='navbar' href="#home"><img style={{marginLeft:"-40px",width:'47%'}}  src='https://pulse.brninfotech.com/pulse/assets/admin/layout/img/logo-big.png'></img></Navbar.Brand>
+<Navbar.Brand className='navbar' href="#home"><img style={{marginLeft:"-30%",width:'47%'}}  src='https://pulse.brninfotech.com/pulse/assets/admin/layout/img/logo-big.png'></img></Navbar.Brand>
       <Nav className="me-auto">
       
-        <Nav.Link  href="#home" onClick={()=>{
-         }}>< FaHome style={{fontSize:"30",marginTop:"-10%",color:"cyan"}}/><b>Home</b></Nav.Link>
+        {/* <Nav.Link  href="#home"  onClick={()=>{
+         }} style={{marginLeft:'-3%'}}>< FaHome style={{fontSize:"30",marginTop:"-10%",color:"cyan"}}/><b>Home</b></Nav.Link>
       
-        
+         */}
  
 
 
@@ -74,14 +74,16 @@ function About() {
 
       <Dropdown.Menu>
       <h6>Hello anonymous.</h6>
+      <br></br>
+     
         <Dropdown.Item href="#/action-1" onClick={()=>{
           navigate("/Login");
           
-        }}><LuLogIn style={{fontSize:"25",marginTop:"-10%",color:"cyan"}} /> Login</Dropdown.Item>
+        }}style={{marginLeft:"-63%",marginTop:'-0.15%'}} ><LuLogIn style={{fontSize:"25",marginTop:"-10%",color:"cyan"}} /> Login</Dropdown.Item>
         <Dropdown.Item href="#/action-2" onClick={()=>{
         navigate("/Signup");
         
-        }}><SiGnuprivacyguard style={{fontSize:"25",marginTop:"-10%",color:"cyan"}} /> Signup</Dropdown.Item>
+        }} style={{marginLeft:"-63%"}}><SiGnuprivacyguard style={{fontSize:"25",marginTop:"-10%",color:"cyan"}} /> Signup</Dropdown.Item>
         
     
         
@@ -100,7 +102,7 @@ function About() {
         <Offcanvas.Body>
           <h4><mark>#</mark>Web Development & Mobile Apps Practical Training'</h4>
           <br></br>
-          <h3 style={{color:"red"}}>< IoMdInformationCircle style={{fontSize:"30",marginTop:"-2%",color:"black"}}/> CONTACT INFORMATION</h3>
+          <h3 style={{color:"red"}}> CONTACT INFORMATION</h3>
          <h5>< FaWhatsapp style={{fontSize:"30",marginTop:"-2%",color:"green"}}/> 9966309900 </h5>
          <h5>< MdAttachEmail style={{fontSize:"30",marginTop:"-2%",color:"black"}}/> info@brninfotech.com</h5>
          <h5>< FaGlobeAmericas style={{fontSize:"30",marginTop:"-2%",color:"black"}}/> https://www.brninfotech.com</h5>
@@ -112,14 +114,14 @@ function About() {
 
  
     <Dropdown id='profile'>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
-      <BsAndroid2  style={{fontSize:"30",marginTop:"-0.7%",color:"cyan"}}/> <b>IOS / ANDROID </b>
+      <Dropdown.Toggle variant="success" id="dropdown-basic" >
+      <BsAndroid2  style={{fontSize:"30",marginTop:"-0.7%",color:"cyan"}} /> <b>IOS / ANDROID </b>
 
       </Dropdown.Toggle>
 
       <Dropdown.Menu style={{width:"100%"}}>
       
-        <Dropdown.Item href="https://reactnative.dev/"><TbBrandReactNative style={{fontSize:"25",marginTop:"-0.8%",color:"cyan"}} /> React Native</Dropdown.Item>
+        <Dropdown.Item href="https://reactnative.dev/" style={{marginLeft:'-55%',marginTop:"15%"}}><TbBrandReactNative style={{fontSize:"25",marginTop:"-0.8%",color:"cyan"}}/> React Native</Dropdown.Item>
         
         
     
@@ -132,13 +134,13 @@ function About() {
 
       </Dropdown.Toggle>
 
-      <Dropdown.Menu style={{width:"100%"}}>
+      <Dropdown.Menu style={{width:"100%"}} >
       
 
-      <Dropdown.Item href="https://www.npmjs.com/package/mongodb"><SiMongodb style={{fontSize:"25",marginTop:"-0.8%",color:"cyan"}} />Mongo DB</Dropdown.Item>
-      <Dropdown.Item href="https://expressjs.com/"><SiExpress style={{fontSize:"25",marginTop:"-0.8%",color:"cyan"}} /> Express js</Dropdown.Item>
-      <Dropdown.Item href="https://react.dev/"><RiReactjsFill style={{fontSize:"25",marginTop:"-0.8%",color:"cyan"}} />React js</Dropdown.Item>
-      <Dropdown.Item href="https://nodejs.org/en/"><FaNodeJs style={{fontSize:"25",marginTop:"-0.8%",color:"cyan"}} />Node js</Dropdown.Item>
+      <Dropdown.Item href="https://www.npmjs.com/package/mongodb" style={{marginLeft:'-63%',marginTop:"15%"}}><SiMongodb style={{fontSize:"25",marginTop:"-0.8%",color:"cyan"}} />Mongo DB</Dropdown.Item>
+      <Dropdown.Item href="https://expressjs.com/" style={{marginLeft:'-63%',marginTop:"15%"}}><SiExpress style={{fontSize:"25",marginTop:"-0.8%",color:"cyan"}} /> Express js</Dropdown.Item>
+      <Dropdown.Item href="https://react.dev/" style={{marginLeft:'-63%',marginTop:"15%"}}><RiReactjsFill style={{fontSize:"25",marginTop:"-0.8%",color:"cyan"}} />React js</Dropdown.Item>
+      <Dropdown.Item href="https://nodejs.org/en/" style={{marginLeft:'-63%',marginTop:"15%"}}><FaNodeJs style={{fontSize:"25",marginTop:"-0.8%",color:"cyan"}} />Node js</Dropdown.Item>
   
         </Dropdown.Menu>
     </Dropdown>
@@ -160,7 +162,7 @@ function About() {
 
 
 
-<h2 style={{marginLeft:'11%'}}>< FaGlobeAmericas style={{fontSize:"30",marginTop:"-0.5%",color:"black"}}/>Web Development & <CiMobile1 style={{fontSize:"30",marginTop:"-0.5%",color:"black"}}/> Mobile Apps Practical Training'</h2>
+<h2 style={{marginLeft:'-18%'}}>< FaGlobeAmericas style={{fontSize:"30",marginTop:"-0.5%",color:"black"}}/>Web Development & <CiMobile1 style={{fontSize:"30",marginTop:"-0.5%",color:"black"}}/> Mobile Apps Practical Training'</h2>
 <br></br>
 <div className='cards'>
     <Card id='iteams' style={{ width: '18rem' }}>

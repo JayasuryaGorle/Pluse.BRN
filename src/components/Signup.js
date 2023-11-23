@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Signup() {
   let [image, setimage] = useState("./images/dummy.jpg");
@@ -52,6 +53,8 @@ function Signup() {
       spanRef.current.innerHTML = "❌";
     }
   };
+
+  let navigate = useNavigate();
 
   return (
     <div className="signUp">
@@ -215,10 +218,14 @@ function Signup() {
               </a>
             </div>
             <div>
-              <button className="back">BACK</button>
+              <button className="back" onClick={()=>{
+                navigate("/")
+              }}>BACK</button>
             </div>
             <div>
-              <button className="submit">SUBMIT</button>
+              <button className="submit" onClick={()=>{
+                navigate("/Login");
+              }}>SUBMIT</button>
             </div>
           </div>
         </form>
