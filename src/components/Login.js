@@ -5,10 +5,7 @@ function Login() {
     <div>
       <form>
         <div>
-          <label>Name</label>
-
-          <label>FirstName</label>
-          <input></input>
+        
 
         </div>
       </form>
