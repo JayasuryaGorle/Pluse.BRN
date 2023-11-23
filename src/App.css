@@ -1,38 +1,147 @@
 .App {
   text-align: center;
-}
+ 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pageTitle{
+  font-size: 2.5rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction:row;
+  justify-items:start ;
+  font-weight: 200;
+  color:#666;
+  padding-left: 1%;
+ 
+}
+.subTitle{
+  font-size: 1.3rem;
+  position: relative;
+  top: 20px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.div{
+width: 100%;
+padding: 20px;
+font-size: 1.2rem;
+height: 100px;
+font-weight: 100;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homeText:hover{
+  text-decoration:1.5px solid underline black;
+}
+.taskText:hover{
+  text-decoration: 1.5px solid underline black ;
+  
+}
+
+.icon{
+  padding-right: 5px;
+  position: relative;
+  bottom: 3px;
+  font-size: 1.9rem;
+}
+.disabled{
+  background-color:rgba(0, 0, 255, 0.655);
+  margin-top: 30px;
+  height: 50px;
+  font-size: 1.5rem;
+}
+.text{
+position: relative;
+bottom: 30px;
+right: 34%;
+
+}
+
+.border{
+  border: 2px solid black;
+  height: 1000px;
+width: 100%;
+background-color:white;
+
+}
+.icon2{
+  font-size: 1.2rem;
+
+}
+table,th,td {
+   border:1px solid black;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+.tableSet{
+  width: 128%;
+  
+}
+
+strong{
+  color: black;
+  padding-right:1px ;
+}
+
+input{
+height: 83%;
+ width: 30%;
+font-size: 1rem;
+position: relative;
+top: 2%;
+
+
+}
+p{
+  font-size: 1rem;
+}
+.search{
+  display: flex;
+  flex-direction:row;
+ justify-content: space-between;
+}
+
+#All{
+  height: 3%;
+ width: 10%;
+}
+
+.correct{
+  position: relative;
+  bottom:42.5%;
+  left: 50%;
+}
+.accordian{
+  position: relative;
+  bottom: 35%;
+}
+form{
+  border: 2px solid black;
+
+}
+form label{
+  display: inline-block;
+  width: 12%;
+}
+form div{
+  margin: 20px;
+}
+.head{
+  width: 30%;
+  padding-left: 5%;
+  text-align: right;
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+.tail{
+  width: 40%;
+  padding-right:4%;
+height: 35px;
+font-size: 1.2rem;
+
+}
+.task{
+  font-size:2rem;
+  text-decoration:underline ;
+}
+.canvasTitle{
+  text-decoration: underline;
 }
