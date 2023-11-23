@@ -12,6 +12,7 @@ function App() {
     <div className="App">
 
 
+
 <BrowserRouter>
      <Routes>
       <Route path='/' element={<About/>}></Route>
@@ -20,6 +21,10 @@ function App() {
        <Route path='/Home' element={<Home/>}></Route>
      </Routes>
      </BrowserRouter>
+
+
+
+
 
     </div>
   );
